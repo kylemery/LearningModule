@@ -3,7 +3,7 @@
   --color-primary-light: #ebeeeb;
   --color-secondary: #3fae2a;
   --color-grey-light: #f2f2f2;
-  --color-grey-light: #a7a9ac;
+  --color-grey-dark: #a7a9ac;
 
   --font-primary: "Source Sans Pro", arial, sans-serif;
 }
@@ -24,5 +24,5 @@ h2 {
 }
 
 h3 {
-   
+
 }
