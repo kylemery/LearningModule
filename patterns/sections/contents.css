@@ -1,0 +1,19 @@
+.contents a {
+  background-color: white;
+}
+
+.contents .grid {
+  max-width: 24em;
+}
+
+.button-regular a {
+  display: inline-block;
+  background-color: var(--color-primary);
+  padding: 0.5em;
+  text-decoration: none;
+  color: white;
+  border: solid 5px var(--color-grey-dark);
+  letter-spacing: 0.125rem;
+  border-radius: none;
+  font-style: bold;
+}
