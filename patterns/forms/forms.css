@@ -1,0 +1,89 @@
+html {
+  background-color: #f2f2f2;
+}
+
+.flag-optional {
+  color: var(--color-primary-light);
+  font-family: var(--font-primary);
+}
+
+.is-validated input:invalid,
+.is-validated input[type="checkbox"]:invalid + label::before {
+  border-color: #f33;
+}
+
+.error-message {
+  display: none;
+  background-color: #f33;
+  color: white;
+}
+
+.error-message-highlighted {
+  background-color: #f33;
+  color: #fff;
+}
+
+.is-validated .error-message-highlighted,
+.is-validated input:invalid + .error-message,
+.is-validated textarea:invalid + .error-message,
+.is-validated select:invalid + .error-message,
+.is-validated input:invalid + label + .error-message {
+  display: block;
+}
+
+label {
+  font-family: var(--font-primary);
+}
+
+p span {
+  color: var(--color-accent);
+}
+
+.btn {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+  transition: all 250ms linear;
+}
+
+.btn:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+.field-group {
+  background-color: var(--color-primary);
+}
+
+h2, h3, legend {
+  color: #f2f2f2;
+  font-family: var(--font-primary);
+}
+
+input, textarea, select {
+  background-color: white;
+  border: solid 5px var(--color-grey-dark);
+}
+
+.check-label {
+  padding-left: 3rem;
+}
+
+input[type="checkbox"] + label::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.button-regular {
+  display: inline-block;
+  background-color: var(--color-primary);
+  padding: 0.5em;
+  text-decoration: none;
+  color: white;
+  border: solid 5px var(--color-grey-dark);
+  letter-spacing: .1rem;
+  border-radius: 0;
+  font-weight: bold;
+}
