@@ -1,1 +1,14 @@
 
+.main-banner {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 2em;
+}
+
+.main-banner h2 {
+  margin: 0;
+}
+
+.main-banner h1 {
+  margin: 0;
+}

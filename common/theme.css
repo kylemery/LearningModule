@@ -1,6 +1,28 @@
 :root {
   --color-primary: #006341;
   --color-primary-light: #ebeeeb;
+  --color-secondary: #3fae2a;
   --color-grey-light: #f2f2f2;
-  
+  --color-grey-dark: #a7a9ac;
+
+  --font-primary: "Source Sans Pro", arial, sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
+}
+
+h1 {
+  font-family: var(--font-primary);
+  color: white;
+  font-weight: bold;
+}
+
+h2 {
+  color: white;
+  font-weight: normal;
+}
+
+h3 {
+
 }
