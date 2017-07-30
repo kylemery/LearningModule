@@ -1,0 +1,45 @@
+.card-home {
+  background-color: white;
+  max-width: 10em;
+  text-align: center;
+  padding: 1em;
+  border: solid 5px var(--color-grey-dark);
+  border-radius: none;
+}
+
+img {
+  width: 100%;
+  max-width: 8em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.card-home h4 {
+  margin: 0;
+}
+
+.card-home a {
+  text-decoration: none;
+  color: black;
+}
+
+.info-card {
+  background-color: white;
+  max-width: 12em;
+}
+
+.info-card .title {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 1em;
+  color: white;
+}
+
+.info-card .title h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.info-card p {
+  padding: 1em;
+}
