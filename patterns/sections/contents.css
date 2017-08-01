@@ -1,4 +1,4 @@
-.contents a {
+.contents .unit {
   background-color: white;
 }
 
@@ -16,4 +16,9 @@
   letter-spacing: 0.125rem;
   border-radius: none;
   font-style: bold;
+}
+
+.button-wrapper {
+  margin: auto;
+  max-width: 24em;
 }
