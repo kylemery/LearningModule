@@ -26,3 +26,31 @@
   margin: auto;
   max-width: 24em;
 }
+
+
+.roles-card {
+  min-height: 14em;
+  background-color: white;
+}
+
+.roles-card h4 {
+  display: block;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: normal;
+}
+
+.roles-card p {
+  display: block;
+}
+
+.button-unit a {
+  background-color: var(--color-primary);
+  padding: 0.5em;
+  text-decoration: none;
+  color: white;
+  border: solid 5px var(--color-grey-dark);
+  letter-spacing: 0.125rem;
+  border-radius: none;
+  font-style: bold;
+}
