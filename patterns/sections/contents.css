@@ -1,9 +1,13 @@
-.contents .unit {
+.button-regular {
+  background-color: #f2f2f2;
+}
+
+.contents .icon-unit {
   background-color: white;
 }
 
 .contents .grid {
-  max-width: 24em;
+  max-width: 30em;
 }
 
 .button-regular a {
