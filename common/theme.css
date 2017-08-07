@@ -23,3 +23,9 @@ h2 {
   color: white;
   font-weight: normal;
 }
+
+.link {
+  color: var(--color-secondary);
+  text-decoration: underline;
+  font-weight: normal;
+}
