@@ -24,7 +24,7 @@
 
 .button-wrapper {
   margin: auto;
-  max-width: 24em;
+  max-width: 30em;
 }
 
 
@@ -53,4 +53,14 @@
   letter-spacing: 0.125rem;
   border-radius: none;
   font-style: bold;
+}
+
+.content-icon {
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.content-icon svg {
+  width: 100%;
+  height: 100%;
 }
