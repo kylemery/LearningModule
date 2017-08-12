@@ -61,10 +61,19 @@ function addRouting() {
 
 function routingHandler() {
     const pages = {
-        home:              document.getElementById('home'),
-        whyStudyInGroups:  document.getElementById('why-study-in-groups'),
-        whatIsAStudyGroup: document.getElementById('what-is-a-study-group'),
-        commonProblems:    document.getElementById('common-problems'),
+        home:                           document.getElementById('home'),
+        whyStudyInGroups:               document.getElementById('why-study-in-groups'),
+        whatIsAStudyGroup:              document.getElementById('what-is-a-study-group'),
+        commonProblems:                 document.getElementById('common-problems'),
+        whatRoleWillYouPlay:            document.getElementById('what-role-will-you-play'),
+        whatAreTheGoalsOfTheStudyGroup: document.getElementById('what-are-the-goals-of-the-study-group'),
+        commonRoles:                    document.getElementById('common-roles'),
+        informalStudyGroups:            document.getElementById('informal-study-groups'),
+        thePlanningStage:               document.getElementById('the-planning-stage'),
+        studyStrategies:                document.getElementById('study-strategies'),
+        keepingOnTrack:                 document.getElementById('keeping-on-track'),
+        form:                           document.getElementById('form'),
+        success:                        document.getElementById('success'),
     };
 
     function hideInactivePages(activePage) {
@@ -93,6 +102,60 @@ function routingHandler() {
         case "#common-problems":
             console.log('case common-problems');
             hideInactivePages(pages.commonProblems);
+            break;
+
+
+        case "#what-role-will-you-play":
+            console.log('case what-role-will-you-play');
+            hideInactivePages(pages.whatRoleWillYouPlay);
+            break;
+
+
+        case "#what-are-the-goals-of-the-study-group":
+            console.log('case what-are-the-goals-of-the-study-group');
+            hideInactivePages(pages.whatAreTheGoalsOfTheStudyGroup);
+            break;
+
+
+        case "#common-roles":
+            console.log('case common-roles');
+            hideInactivePages(pages.commonRoles);
+            break;
+
+
+        case "#informal-study-groups":
+            console.log('case informal-study-groups');
+            hideInactivePages(pages.informalStudyGroups);
+            break;
+
+
+        case "#the-planning-stage":
+            console.log('case the-planning-stage');
+            hideInactivePages(pages.thePlanningStage);
+            break;
+
+
+        case "#study-strategies":
+            console.log('case study-strategies');
+            hideInactivePages(pages.studyStrategies);
+            break;
+
+
+        case "#keeping-on-track":
+            console.log('case keeping-on-track');
+            hideInactivePages(pages.keepingOnTrack);
+            break;
+
+
+        case "#form":
+            console.log('case form');
+            hideInactivePages(pages.form);
+            break;
+
+
+        case "#success":
+            console.log('case success');
+            hideInactivePages(pages.success);
             break;
 
         default:
@@ -137,7 +200,7 @@ function isModuleComplete (num) {
 }
 
 /**
- * 
+ *
  */
 function isBoxSelected(num) {
     return window.sessionStorage.getItem(`isModule${num}Complete`, true);

@@ -3,6 +3,7 @@
   text-align: center;
   border: solid 5px var(--color-grey-dark);
   border-radius: none;
+  min-height: 252px;
 }
 
 img {
