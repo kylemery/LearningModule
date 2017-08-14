@@ -76,7 +76,7 @@ input[type="checkbox"] + label::before {
   top: 0;
 }
 
-.button-regular {
+form .button-regular {
   display: inline-block;
   background-color: var(--color-primary);
   padding: 0.5em;
@@ -86,4 +86,8 @@ input[type="checkbox"] + label::before {
   letter-spacing: .1rem;
   border-radius: 0;
   font-weight: bold;
+}
+
+form .icon {
+  float: none;
 }
