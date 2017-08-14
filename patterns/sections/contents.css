@@ -58,3 +58,19 @@
 .icon {
   float: left;
 }
+
+.strategies-card {
+  min-height: 20em;
+  background-color: white;
+}
+
+.strategies-card h4 {
+  display: block;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: normal;
+}
+
+.strategies-card p {
+  display: block;
+}
