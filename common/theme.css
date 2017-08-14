@@ -24,6 +24,10 @@ h2 {
   font-weight: normal;
 }
 
+h5 {
+  color: var(--color-primary);
+}
+
 .link {
   color: var(--color-secondary);
   text-decoration: underline;
