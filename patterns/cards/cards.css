@@ -13,11 +13,11 @@ img {
   margin-bottom: 1em;
 }
 
-.card-home h4 {
+.home-cards h4 {
   margin: 0;
 }
 
-.card-home a {
+.home-cards a {
   text-decoration: none;
   color: black;
 }
