@@ -18,6 +18,7 @@
 
 
     addRouting();
+    areModulesComplete();
 })(window, document);
 
 
@@ -140,6 +141,7 @@ function routingHandler() {
             alert('Default route!')
             break;
     }
+    areModulesComplete()
 }
 
 /******************************************** HELPERS *********************************************/
@@ -157,34 +159,45 @@ function getModuleBoxElements () {
  * @param {number} num - The module number.
  */
 function setModuleComplete(num) {
-    window.sessionStorage.setItem(`isModule${num}Complete`, true);
+    window.localStorage.setItem(`isModule${num}Complete`, true);
 }
 
 /**
  * Mark all module boxes as incomplete.
  */
 function resetModules() {
-    window.sessionStorage.setItem(`isModule1Complete`, false);
-    window.sessionStorage.setItem(`isModule2Complete`, false);
-    window.sessionStorage.setItem(`isModule3Complete`, false);
-    window.sessionStorage.setItem(`isModule4Complete`, false);
+    window.localStorage.setItem(`isModule1Complete`, false);
+    window.localStorage.setItem(`isModule2Complete`, false);
+    window.localStorage.setItem(`isModule3Complete`, false);
+    window.localStorage.setItem(`isModule4Complete`, false);
 }
 
 /**
  * @return {boolean} true if module is complete.
  */
 function isModuleComplete (num) {
-    return window.sessionStorage.getItem(`isModule${num}Complete`);
+    return window.localStorage.getItem(`isModule${num}Complete`);
 }
 
 /**
  *
  */
 function isBoxSelected(num) {
-    return window.sessionStorage.getItem(`isModule${num}Complete`, true);
+    return window.localStorage.getItem(`isModule${num}Complete`, true);
 }
 
+function areModulesComplete() {
+    const allModules=[
+    window.localStorage.getItem(`isModule1Complete`),
+    window.localStorage.getItem(`isModule2Complete`),
+    window.localStorage.getItem(`isModule3Complete`),
+    window.localStorage.getItem(`isModule4Complete`),
+  ];
 
+  if(allModules.indexOf(null)==-1){
+    document.getElementById("finish").classList.remove("hidden")
+  }
+}
 
 
 
