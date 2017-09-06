@@ -16,40 +16,9 @@
         document.getElementById('module-4').classList.add('completed-module');
     }
 
-    addEventListeners();
 
     addRouting();
 })(window, document);
-
-/************************************** CLICK EVENT HANDLING **************************************/
-function addEventListeners() {
-    const modules = getModuleBoxElements();
-
-    modules.module1Box.addEventListener("click", () => {
-        console.log(`Event occurred!`);
-        modules.module1Box.classList.add('completed-module');
-        setModuleComplete(1);
-    });
-
-    modules.module2Box.addEventListener("click", () => {
-        console.log(`Event occurred!`);
-        modules.module2Box.classList.add('completed-module');
-        setModuleComplete(2);
-    });
-
-    modules.module3Box.addEventListener("click", () => {
-        console.log(`Event occurred!`);
-        modules.module3Box.classList.add('completed-module');
-        setModuleComplete(3);
-    });
-
-    modules.module4Box.addEventListener("click", () => {
-        console.log(`Event occurred!`);
-        modules.module4Box.classList.add('completed-module');
-        setModuleComplete(4);
-    });
-}
-
 
 
 /******************************************** ROUTING *********************************************/
@@ -60,6 +29,7 @@ function addRouting() {
 
 
 function routingHandler() {
+    const modules = getModuleBoxElements();
     const pages = {
         home:                           document.getElementById('home'),
         whyStudyInGroups:               document.getElementById('why-study-in-groups'),
@@ -98,10 +68,12 @@ function routingHandler() {
             console.log('case what-is-a-study-group');
             hideInactivePages(pages.whatIsAStudyGroup);
             break;
-
+            // last page
         case "#common-problems":
             console.log('case common-problems');
             hideInactivePages(pages.commonProblems);
+            modules.module1Box.classList.add('completed-module');
+            setModuleComplete(1);
             break;
 
 
@@ -116,10 +88,12 @@ function routingHandler() {
             hideInactivePages(pages.whatAreTheGoalsOfTheStudyGroup);
             break;
 
-
+            // last page
         case "#common-roles":
             console.log('case common-roles');
             hideInactivePages(pages.commonRoles);
+            modules.module2Box.classList.add('completed-module');
+            setModuleComplete(2);
             break;
 
 
@@ -134,16 +108,20 @@ function routingHandler() {
             hideInactivePages(pages.thePlanningStage);
             break;
 
-
+            // last page
         case "#study-strategies":
             console.log('case study-strategies');
             hideInactivePages(pages.studyStrategies);
+            modules.module3Box.classList.add('completed-module');
+            setModuleComplete(3);
             break;
 
-
+            // last page
         case "#keeping-on-track":
             console.log('case keeping-on-track');
             hideInactivePages(pages.keepingOnTrack);
+            modules.module4Box.classList.add('completed-module');
+            setModuleComplete(4);
             break;
 
 
