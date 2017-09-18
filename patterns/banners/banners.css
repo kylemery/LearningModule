@@ -12,3 +12,35 @@
 .main-banner h1 {
   margin: 0;
 }
+
+.main-banner-1 {
+  background-image: url("../../images/1.jpg");
+  background-position: center;
+  background-size: 100%;
+  text-align: center;
+  padding: 2em;
+}
+
+.main-banner-2 {
+  background-image: url("../../images/2.jpg");
+  background-position: center;
+  background-size: 100%;
+  text-align: center;
+  padding: 2em;
+}
+
+.main-banner-3 {
+  background-image: url("../../images/3.jpg");
+  background-position: center;
+  background-size: 100%;
+  text-align: center;
+  padding: 2em;
+}
+
+.main-banner-4 {
+  background-image: url("../../images/4.jpg");
+  background-position: center;
+  background-size: 100%;
+  text-align: center;
+  padding: 2em;
+}
