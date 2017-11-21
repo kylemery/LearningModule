@@ -40,6 +40,7 @@ function routingHandler() {
         whatAreTheGoalsOfTheStudyGroup: document.getElementById('what-are-the-goals-of-the-study-group'),
         commonRoles:                    document.getElementById('common-roles'),
         informalStudyGroups:            document.getElementById('informal-study-groups'),
+        structuredStudyGroups:          document.getElementById('structured-study-groups'),
         thePlanningStage:               document.getElementById('the-planning-stage'),
         studyStrategies:                document.getElementById('study-strategies'),
         keepingOnTrack:                 document.getElementById('keeping-on-track'),
@@ -101,6 +102,12 @@ function routingHandler() {
         case "#informal-study-groups":
             console.log('case informal-study-groups');
             hideInactivePages(pages.informalStudyGroups);
+            break;
+
+
+        case "#structured-study-groups":
+            console.log('case structured-study-groups');
+            hideInactivePages(pages.structuredStudyGroups);
             break;
 
 
