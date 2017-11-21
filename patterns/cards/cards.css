@@ -3,7 +3,7 @@
   text-align: center;
   border: solid 5px var(--color-grey-dark);
   border-radius: none;
-  min-height: 252px;
+  min-height: 330px;
 }
 
 img {
@@ -41,4 +41,20 @@ img {
 
 .info-card p {
   padding: 1em;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .card-home {
+    min-height: 315px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .card-home {
+    min-height: 430px;
+  }
+
 }
