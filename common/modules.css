@@ -299,6 +299,9 @@ svg.img-flex {
 
 .icon-label {
   vertical-align: middle;
+  display: block;
+  float: right;
+  width: 20em;
 }
 
 .icon-link,
@@ -1196,4 +1199,12 @@ a:focus, [tabindex="0"]:focus {
   }
 
   /* End HTML5 Boilerplate code */
+}
+
+@media only screen and (min-width: 30em) {
+
+  .icon-label {
+    width: 25em;
+  }
+
 }
