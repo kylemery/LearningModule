@@ -15,6 +15,14 @@
         console.log(`Is in box selected 4?`);
         document.getElementById('module-4').classList.add('completed-module');
     }
+    if (isBoxSelected(5)) {
+        console.log(`Is in box selected 5?`);
+        document.getElementById('module-5').classList.add('completed-module');
+    }
+    if (isBoxSelected(6)) {
+        console.log(`Is in box selected 6?`);
+        document.getElementById('module-6').classList.add('completed-module');
+    }
 
 
     addRouting();
@@ -70,6 +78,7 @@ function routingHandler() {
             console.log('case what-is-a-study-group');
             hideInactivePages(pages.whatIsAStudyGroup);
             break;
+
             // last page
         case "#common-problems":
             console.log('case common-problems');
@@ -110,18 +119,20 @@ function routingHandler() {
             hideInactivePages(pages.structuredStudyGroups);
             break;
 
-
+            // last page
         case "#the-planning-stage":
             console.log('case the-planning-stage');
             hideInactivePages(pages.thePlanningStage);
+            modules.module3Box.classList.add('completed-module');
+            setModuleComplete(3);
             break;
 
             // last page
         case "#study-strategies":
             console.log('case study-strategies');
             hideInactivePages(pages.studyStrategies);
-            modules.module3Box.classList.add('completed-module');
-            setModuleComplete(3);
+            modules.module5Box.classList.add('completed-module');
+            setModuleComplete(5);
             break;
 
             // last page
@@ -158,6 +169,8 @@ function getModuleBoxElements () {
         module2Box: document.getElementById('module-2'),
         module3Box: document.getElementById('module-3'),
         module4Box: document.getElementById('module-4'),
+        module5Box: document.getElementById('module-5'),
+        module6Box: document.getElementById('module-6'),
     };
 }
 
@@ -177,6 +190,8 @@ function resetModules() {
     window.localStorage.setItem(`isModule2Complete`, false);
     window.localStorage.setItem(`isModule3Complete`, false);
     window.localStorage.setItem(`isModule4Complete`, false);
+    window.localStorage.setItem(`isModule5Complete`, false);
+    window.localStorage.setItem(`isModule6Complete`, false);
 }
 
 /**
@@ -199,6 +214,8 @@ function areModulesComplete() {
     window.localStorage.getItem(`isModule2Complete`),
     window.localStorage.getItem(`isModule3Complete`),
     window.localStorage.getItem(`isModule4Complete`),
+    window.localStorage.getItem(`isModule5Complete`),
+    window.localStorage.getItem(`isModule6Complete`),
   ];
 
   if(allModules.indexOf(null)==-1){
