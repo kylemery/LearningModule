@@ -169,6 +169,26 @@ caption {
   margin: 0 0 1.3rem;
 }
 
+.tenamega {
+  font-size: 2.0408rem;
+  line-height: 2.925rem;
+}
+
+.tenakilo {
+  font-size: 1.9127rem;
+  line-height: 2.6rem;
+}
+
+.tena {
+  font-size: 1.7926rem;
+  line-height: 2.6rem;
+}
+
+.nina {
+  font-size: 1.68rem;
+  line-height: 2.275rem;
+}
+
 .yotta {
   font-size: 1.5745rem;
   line-height: 2.275rem;
@@ -452,6 +472,26 @@ legend {
   table,
   caption {
     margin: 0 0 1.4rem;
+  }
+
+  .tenamega {
+    font-size: 3.6532rem;
+    line-height: 4.9rem;
+  }
+
+  .tenakilo {
+    font-size: 3.2473rem;
+    line-height: 4.55rem;
+  }
+
+  .tena {
+    font-size: 2.8865rem;
+    line-height: 3.85rem;
+  }
+
+  .nina {
+    font-size: 2.5658rem;
+    line-height: 3.5rem;
   }
 
   .yotta {
@@ -761,6 +801,26 @@ legend {
     margin: 0 0 1.5rem;
   }
 
+  .tenamega {
+    font-size: 3.6532rem;
+    line-height: 4.875rem;
+  }
+
+  .tenakilo {
+    font-size: 3.2473rem;
+    line-height: 4.5rem;
+  }
+
+  .tena {
+    font-size: 2.8865rem;
+    line-height: 4.125rem;
+  }
+
+  .nina {
+    font-size: 2.5658rem;
+    line-height: 3.375rem;
+  }
+
   .yotta {
     font-size: 2.2807rem;
     line-height: 3rem;
@@ -1066,6 +1126,26 @@ legend {
   table,
   caption {
     margin: 0 0 1.5rem;
+  }
+
+  .tenamega {
+    font-size: 3.6532rem;
+    line-height: 4.875rem;
+  }
+
+  .tenakilo {
+    font-size: 3.2473rem;
+    line-height: 4.5rem;
+  }
+
+  .tena {
+    font-size: 2.8865rem;
+    line-height: 4.125rem;
+  }
+
+  .nina {
+    font-size: 2.5658rem;
+    line-height: 3.375rem;
   }
 
   .yotta {
